@@ -1,0 +1,67 @@
+.card {
+  border: none;
+  color: white;
+  /* height: calc(98.5% - 10px); */
+  height: -webkit-calc(95.5% - 12px);
+  height: -moz-calc(95.5% - 12px);
+  height: calc(95.5% - 12px);
+  height: 95%;
+  width: 80%;
+  /* padding-top:10px; */
+  font-size: 135%;
+  margin: 20px 0px;
+  /*IMPORTANTE*/
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 9px 9px 9px -9px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 9px 9px 9px -9px rgba(0, 0, 0, 0.55);
+  box-shadow: 9px 9px 9px -9px rgba(0, 0, 0, 0.55);
+  flex: 1;
+}
+#main {
+  height: 93%;
+  margin-top: 5px;
+}
+.filaPrincipal {
+  /* padding-top: 50px; */
+  margin-top: 10px;
+  height: 94%;
+  width: 95%;
+}
+.card:hover {
+  transform: scale(1.02, 1.02);
+  cursor: pointer;
+  -webkit-box-shadow: 7px 7px 19px -6px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 7px 7px 19px -6px rgba(0, 0, 0, 0.72);
+  box-shadow: 7px 7px 19px -6px rgba(0, 0, 0, 0.72);
+}
+#inventario {
+  background-color: #c5e1b5;
+}
+#inventario:focus {
+  background-color: #bae79f;
+}
+#preparacion {
+  background-color: #fed786;
+}
+#preparacion:focus {
+  background-color: #ffd274;
+}
+#desperdicios {
+  background-color: #07624e;
+}
+#desperdicios:focus {
+  background-color: #02503f;
+}
+.card:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0 10px 10px -6px #666;
+  transform: translateY(4px);
+  transform: scale(0.93, 0.93);
+}
