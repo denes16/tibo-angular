@@ -1,33 +1,35 @@
 <div class="container-fluid" id="main">
   <div class="col-xl-12 top text-center mb-3">
     <div style="float: left; position: absolute;" class="ml-3">
-      <button
+      <!-- <button
         href="index.php?Logout=1"
         class="btn btn-danger"
         data-toggle="modal"
         data-target="#logout"
       >
         Cerrar Sesión
-      </button>
+      </button> -->
 
       <button type="button" class="btn btn-info ml-2" id="btnFull">
-        <span class="material-icons md-light">
-          fullscreen
-        </span>
+        <i class="fas fa-expand"></i>
       </button>
       <button class="btn btn-secondary ml-2" id="btnCancelFull">
-        <span class="material-icons md-light">
-          fullscreen_exit
-        </span>
+        <i class="fas fa-compress"></i>
       </button>
     </div>
     <h3 class="font-weight-bold tex-center" style="display: inline;">
       Establecimiento X
     </h3>
   </div>
+<a routerLink="/home" class="btn btn-primary">inventario</a>
+<a routerLink="/inventario" class="btn btn-primary">inventario</a>
   <div class="filaPrincipal row centrado">
     <div class="col-sm-4 d-flex">
-      <button class="card centrado" id="inventario" data-id="1">
+      <button
+        class="card centrado"
+        id="inventario"
+        [routerLink]="['inventario']"
+      >
         <div class="icono">
           <img src="assets/icons/warehouse.png" style="width: 20rem;" />
         </div>
@@ -35,7 +37,12 @@
       </button>
     </div>
     <div class="col-sm-4 d-flex">
-      <button class="card centrado" id="preparacion" data-id="2">
+      <button
+        class="card centrado"
+        id="preparacion"
+        data-id="2"
+        [routerLink]="['/inventario']"
+      >
         <div class="icono">
           <img src="assets/icons/prep.png" style="width: 20rem;" />
         </div>
@@ -44,10 +51,9 @@
     </div>
     <div class="col-sm-4 d-flex">
       <button class="card centrado" id="desperdicios" data-id="3">
-        <!-- <i class="fas fa-trash-alt fa-fw fa-8x mb-3"></i> -->
-        <!-- <div class="icono">
-          <img src="newIcons/trash.png" style="width: 20rem;" />
-        </div> -->
+        <div class="icono">
+          <img src="assets/icons/trash.png" style="width: 20rem;" />
+        </div>
         <h1 class="d-none d-lg-block font-weight-bolder">DESPERDICIOS</h1>
       </button>
     </div>
