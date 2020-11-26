@@ -5,7 +5,7 @@ import { InventarioComponent } from "./components/inventario/inventario.componen
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "inventario", component: InventarioComponent },
-  { path: "**", pathMatch: "full", redirectTo: "/inventario" }
+  { path: "**", pathMatch: "full", redirectTo: "inventario" }
 ];
 
 // configures NgModule imports and exports
